@@ -14,15 +14,17 @@ public class LineComparison {
         int y3 = 2;
         int y4 = 5;
 
-        //Calculated length of two lines
+        //Calculating the length of two lines
         double length1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
         double length2 = Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
 
-        //Checked if the length of two lines are equal and printed it
+        //Checking if both the lines are equal or one is greater than other
         if (length1 == length2) {
             System.out.println("lines are equal");
+        } else if (length1 > length2) {
+            System.out.println("line1 is greater than line2");
         } else {
-            System.out.println("lines are not equal");
+            System.out.println("line1 is less than line2");
         }
     }
 }
